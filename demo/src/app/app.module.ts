@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { QueryBuilderModule } from 'angular2-query-builder';
 
@@ -31,6 +32,7 @@ import { QueryBuilderModule } from 'angular2-query-builder';
     MatRadioModule,
     MatIconModule,
     MatCardModule,
+    MatTooltipModule,
     QueryBuilderModule
   ],
   declarations: [ AppComponent ],

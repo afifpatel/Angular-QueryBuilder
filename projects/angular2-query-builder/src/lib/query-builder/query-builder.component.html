@@ -17,10 +17,10 @@
 
   <ng-template #defaultButtonGroup>
     <div [ngClass]="getClassNames('buttonGroup', 'rightAlign')">
-      <button type="button" (click)="addRule()" [ngClass]="getClassNames('button')" [disabled]=disabled>
+      <button matTooltip="Info about rule" type="button" (click)="addRule()" [ngClass]="getClassNames('button')" [disabled]=disabled>
         <i [ngClass]="getClassNames('addIcon')"></i> Rule
       </button>
-      <button type="button" (click)="addRuleSet()" [ngClass]="getClassNames('button')" *ngIf="allowRuleset" [disabled]=disabled>
+      <button matTooltip="Info about ruleset" type="button" (click)="addRuleSet()" [ngClass]="getClassNames('button')" *ngIf="allowRuleset" [disabled]=disabled>
         <i [ngClass]="getClassNames('addIcon')"></i> Ruleset
       </button>
       <ng-container *ngIf="!!parentValue && allowRuleset">
